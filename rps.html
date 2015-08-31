@@ -1,0 +1,220 @@
+<!-- RPS Script
+	author : Nik Meister
+	age : 17
+	email : nikmeister31@gmail.com
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper and Scissors (BETA VERSION)</title>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+
+body{
+	background: #f2f2f2;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #ff0000;
+}
+
+.rock{
+        padding: 10px;
+        border: 2px solid #B45F04;
+        border-radius: 5px;
+        background: #f2f2f2;
+        color: #B45F04;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+
+    .rock:hover{
+        border: 2px solid #B45F04;
+        background: #B45F04;
+        color: #f2f2f2;
+    }
+
+
+    .paper{
+        padding: 10px;
+        border: 2px solid #00FF00;
+        border-radius: 5px;
+        background: #f2f2f2;
+        color: #00FF00;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+
+    .paper:hover{
+        border: 2px solid #00FF00;
+        background: #00FF00;
+        color: #f2f2f2;
+    }
+
+
+    .scissors{
+        padding: 10px;
+        border: 2px solid #424242;
+        border-radius: 5px;
+        background: #f2f2f2;
+        color: #424242;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+
+    .scissors:hover{
+        border: 2px solid #424242;
+        background: #424242;
+        color: #f2f2f2;
+    }
+
+    .copy{
+    	position: fixed;
+    	bottom: 0;
+    	right: 0;
+    	font-family: 'Montserrat', sans-serif;
+    }
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+
+
+//Your Choice : Rock
+
+var rock = function()
+{
+
+var pc = Math.random();
+
+if(pc < 0.34)
+{
+	pc = "rock";
+}
+
+else if(pc <= 0.67)
+{
+	pc = "paper";
+}
+
+else
+{
+	pc = "scissors";
+}
+
+
+
+	if(pc === "rock")
+	{
+		confirm("Your Choice : ROCK" + "\n Computer Choice : ROCK" + "\n\n THE RESULT IS A TIE!");
+	}
+
+	else if(pc ==="paper")
+	{
+		confirm("Your Choice : ROCK" + "\n Computer Choice : PAPER" + "\n\n COMPUTER WINS!");
+	}
+
+	else
+	{
+		confirm("Your Choice : ROCK" + "\n Computer Choice : SCISSORS" + "\n\n YOU WIN!");
+	}
+
+};
+
+//Your Choice : Paper
+
+var paper = function()
+{
+
+var pc = Math.random();
+
+if(pc < 0.34)
+{
+	pc = "rock";
+}
+
+else if(pc <= 0.67)
+{
+	pc = "paper";
+}
+
+else
+{
+	pc = "scissors";
+}
+
+	if(pc === "rock")
+	{
+		confirm("Your Choice : PAPER" + "\n Computer Choice : ROCK" + "\n\n YOU WIN!");
+	}
+
+	else if(pc ==="paper")
+	{
+		confirm("Your Choice : PAPER" + "\n Computer Choice : PAPER" + "\n\n THE RESULT IS A TIE!");
+	}
+
+	else
+	{
+		confirm("Your Choice : PAPER" + "\n Computer Choice : SCISSORS" + "\n\n COMPUTER WINS!");
+	}
+
+};
+
+//Your Choice : Scissors
+
+var scissors = function()
+{
+
+var pc = Math.random();
+
+if(pc < 0.34)
+{
+	pc = "rock";
+}
+
+else if(pc <= 0.67)
+{
+	pc = "paper";
+}
+
+else
+{
+	pc = "scissors";
+}
+
+
+	if(pc === "rock")
+	{
+		confirm("Your Choice : SCISSORS" + "\n Computer Choice : ROCK" + "\n\n COMPUTER WINS!");
+	}
+
+	else if(pc ==="paper")
+	{
+		confirm("Your Choice : SCISSORS" + "\n Computer Choice : PAPER" + "\n\n YOU WIN!");
+	}
+
+	else
+	{
+		confirm("Your Choice : SCISSORS" + "\n Computer Choice : SCISSORS" + "\n\n THE RESULT IS A TIE!");
+	}
+
+};
+
+
+	</script>
+	<center>Click on a button below to choose 'Rock', 'Paper' or 'Scissors'<br><br>
+	<button class="rock" onclick="rock()"><b>ROCK</b></button>
+	<button class="paper" onclick="paper()"><b>PAPER</b></button>
+	<button class="scissors" onclick="scissors()"><b>SCISSORS</b></button></center>
+	<div class="copy"><b><a href="http://www.nikmeister.com">Nik Meister &#169; 2015</a></b></div>
+
+</body>
+</html>
